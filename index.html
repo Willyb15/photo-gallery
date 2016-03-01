@@ -8,33 +8,45 @@
 			background-color: #222;
 			color: #ddd;
 			margin-top: 20px;
+			text-align: center;
 		}
-		
-		/*added display: block to make thumbnails align vertically as opposed to horizontally*/
-		.thumbnails img{
-			height: 80px;
+		/*thumbnails width makes 20% causes elements to align vertically*/
+		/*then we float left*/
+		div.thumbnails{
+			width: 20%;
+			float: left;
+
+		}
+		div.thumbnails img{
+			width: 95%;
+			margin: auto;
 			border:4px solid #555;
 			margin: 0 10px 10px 0;
-			display: block;
 		}
-		/* Border makes teal border when mouse hovers over img*/
-		/*Cursor makes the mouse a hand insead of pointer when hovered over img*/
-		.thumbnails img:hover{
+		
+		div.preview {
+			width:80%;
+			float: right;
+		}
+
+		div.preview img{
+			width: 80%;
+	
+		}
+
+
+			
+
+		}
+		/* Border makes teal border when mouse hovers over img
+		/* Cursor makes the mouse a hand insead of pointer when hovered over img*/
+		div.thumbnails img:hover{
 			border:4px solid#0cf;
 			cursor: pointer;
 		}
 		/*aligns imgages in center*/
-		.gallery, .preview {
+		div.gallery, div.preview {
 			text-align: center;
-		}
-		.gallery{
-			text-align:flex-start;
-		}
-		
-		/*Float Left allowed the preview to move up and rest inline with index thumbnails vertically aligned on left of page */
-		div { 
-			float: left;
-			margin-left: 20px;
 		}
 
 
